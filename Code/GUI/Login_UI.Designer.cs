@@ -40,7 +40,7 @@
             this.lbl_Promo2 = new System.Windows.Forms.Label();
             this.lbl_Promo1 = new System.Windows.Forms.Label();
             this.lbl_Name = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lbl_Create = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl_Forgot
@@ -169,17 +169,17 @@
             this.lbl_Name.TabIndex = 12;
             this.lbl_Name.Text = "ORG4NGE";
             // 
-            // label6
+            // lbl_Create
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label6.Location = new System.Drawing.Point(211, 384);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(166, 18);
-            this.label6.TabIndex = 28;
-            this.label6.Text = "Create New Account >>";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.lbl_Create.AutoSize = true;
+            this.lbl_Create.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Create.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lbl_Create.Location = new System.Drawing.Point(211, 384);
+            this.lbl_Create.Name = "lbl_Create";
+            this.lbl_Create.Size = new System.Drawing.Size(166, 18);
+            this.lbl_Create.TabIndex = 28;
+            this.lbl_Create.Text = "Create New Account >>";
+            this.lbl_Create.Click += new System.EventHandler(this.lbl_Create_Click);
             // 
             // Login_UI
             // 
@@ -187,7 +187,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Snow;
             this.ClientSize = new System.Drawing.Size(394, 411);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lbl_Create);
             this.Controls.Add(this.lbl_Forgot);
             this.Controls.Add(this.lbl_PassWarn);
             this.Controls.Add(this.lbl_UNameWarn);
@@ -223,6 +223,6 @@
         private System.Windows.Forms.Label lbl_Promo2;
         private System.Windows.Forms.Label lbl_Promo1;
         private System.Windows.Forms.Label lbl_Name;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lbl_Create;
     }
 }

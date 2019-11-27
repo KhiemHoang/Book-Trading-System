@@ -96,8 +96,8 @@ namespace GUI
         {
             Environment.Exit(0);
         }
-
-        private void label6_Click(object sender, EventArgs e)
+        
+        private void lbl_Create_Click(object sender, EventArgs e)
         {
             this.Hide();
             Register_UI uiRegister = new Register_UI();

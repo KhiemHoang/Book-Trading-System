@@ -43,7 +43,7 @@ namespace GUI
 
         private void Cus_Search_UI_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the '_Book_controllingDataSet2.book' table. You can move, or remove it, as needed.
+                // TODO: This line of code loads data into the '_Book_controllingDataSet2.book' table. You can move, or remove it, as needed.
             //Fill the Book table
             dtg_BookView.DataSource = busBook.getAllBook_forCus();
             
@@ -155,10 +155,11 @@ namespace GUI
                 {
                     CaID = busCart.getCartID(CusID);
 
+
                     //THrough DTO didnt work as normal
                     //DTO_Pick Pick = new DTO_Pick(CaID, BID, CusID, quantity);
 
-                    //MessageBox.Show("BID = " + BID + " Quantity = " + quantity + " CaID = " + CaID + " CusID = " + CusID);
+                    //MessageBox.Show("BID = " + BID + " Quantity = " + Quantity + " CaID = " + CaID + " CusID = " + CusID);
 
                     if (busPick.checkPickAvailable(CaID, CusID, BID) == 1) //If there already selected book in cart, update new quantity
                     {
@@ -197,6 +198,8 @@ namespace GUI
                     if (busCart.addNewCart(CusID))
                     {
                         int CaID = busCart.getCartID(CusID);
+
+                        //MessageBox.Show("" + CaID + "" + CusID);
                         //DTO_Pick Pick = new DTO_Pick(CaID, BID, CusID, quantity);
                         if (busPick.addPick(CaID, BID, CusID, Quantity))
                         {
@@ -501,6 +504,7 @@ namespace GUI
         private void Cus_Search_UI_FormClosing(object sender, FormClosingEventArgs e)
         {
             Environment.Exit(0);
+            busCart.updateFlag(CusID);
         }
 
 

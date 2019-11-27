@@ -21,14 +21,19 @@ namespace GUI
         {
             InitializeComponent();
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        
+        private void Register_UI_Load(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(tbx_Address.Text) || string.IsNullOrEmpty(tbx_Email.Text) || string.IsNullOrEmpty(tbx_Password.Text) || string.IsNullOrEmpty(tbx_UserName.Text))
+
+        }
+
+        private void btn_Submit_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(tbx_Address.Text) || string.IsNullOrEmpty(tbx_Email.Text) || string.IsNullOrEmpty(tbx_Password.Text) || string.IsNullOrEmpty(tbx_UserName.Text))
             {
                 MessageBox.Show("You must fill required Information!!!");
             }
-            else if(busCus.checkNameExist(tbx_UserName.Text) > 0)
+            else if (busCus.checkNameExist(tbx_UserName.Text) > 0)
             {
                 MessageBox.Show("User name exits!!!");
             }
@@ -37,15 +42,15 @@ namespace GUI
                 dtoCus = new DTO_Customer(0, tbx_UserName.Text, tbx_Password.Text, tbx_Email.Text, tbx_Address.Text, 0, "System", "getdate()", "System", "getdate()");
                 if (busCus.addCustomer(dtoCus))
                 {
-                    MessageBox.Show("Adding success.");
+                    MessageBox.Show("Register success.");
                 }
 
                 else
-                    MessageBox.Show("Adding fail.");
+                    MessageBox.Show("Register fail.");
             }
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void lbl_Login_Click(object sender, EventArgs e)
         {
             this.Hide();
             GUI.Login_UI uiLogin = new Login_UI();

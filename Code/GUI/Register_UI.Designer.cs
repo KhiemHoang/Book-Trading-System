@@ -36,10 +36,10 @@
             this.tbx_UserName = new System.Windows.Forms.TextBox();
             this.tbx_Password = new System.Windows.Forms.TextBox();
             this.tbx_Email = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_Submit = new System.Windows.Forms.Button();
             this.tbx_Address = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lbl_Login = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl_Name
@@ -119,16 +119,16 @@
             this.tbx_Email.Size = new System.Drawing.Size(251, 26);
             this.tbx_Email.TabIndex = 23;
             // 
-            // button1
+            // btn_Submit
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(145, 382);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 41);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_Submit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Submit.Location = new System.Drawing.Point(145, 382);
+            this.btn_Submit.Name = "btn_Submit";
+            this.btn_Submit.Size = new System.Drawing.Size(96, 41);
+            this.btn_Submit.TabIndex = 24;
+            this.btn_Submit.Text = "Submit";
+            this.btn_Submit.UseVisualStyleBackColor = true;
+            this.btn_Submit.Click += new System.EventHandler(this.btn_Submit_Click);
             // 
             // tbx_Address
             // 
@@ -148,17 +148,17 @@
             this.label5.TabIndex = 26;
             this.label5.Text = "Password:";
             // 
-            // label6
+            // lbl_Login
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label6.Location = new System.Drawing.Point(215, 446);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(171, 18);
-            this.label6.TabIndex = 27;
-            this.label6.Text = "Already have Account >>";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.lbl_Login.AutoSize = true;
+            this.lbl_Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Login.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lbl_Login.Location = new System.Drawing.Point(215, 446);
+            this.lbl_Login.Name = "lbl_Login";
+            this.lbl_Login.Size = new System.Drawing.Size(171, 18);
+            this.lbl_Login.TabIndex = 27;
+            this.lbl_Login.Text = "Already have Account >>";
+            this.lbl_Login.Click += new System.EventHandler(this.lbl_Login_Click);
             // 
             // Register_UI
             // 
@@ -166,10 +166,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Snow;
             this.ClientSize = new System.Drawing.Size(388, 471);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lbl_Login);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tbx_Address);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_Submit);
             this.Controls.Add(this.tbx_Email);
             this.Controls.Add(this.tbx_Password);
             this.Controls.Add(this.tbx_UserName);
@@ -180,6 +180,7 @@
             this.Controls.Add(this.lbl_Name);
             this.Name = "Register_UI";
             this.Text = "Register_UI";
+            this.Load += new System.EventHandler(this.Register_UI_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -195,9 +196,9 @@
         private System.Windows.Forms.TextBox tbx_UserName;
         private System.Windows.Forms.TextBox tbx_Password;
         private System.Windows.Forms.TextBox tbx_Email;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_Submit;
         private System.Windows.Forms.TextBox tbx_Address;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lbl_Login;
     }
 }

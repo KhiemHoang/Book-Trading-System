@@ -26,7 +26,6 @@ namespace GUI
         public static int CusID;    //Customer ID
         public static string Email;
         public static int StfID;
-        public static int Option;
         public StaffControl_UI()
         {
             InitializeComponent();
@@ -783,39 +782,42 @@ namespace GUI
 
 
 
-        /*===================================EXIT FORM================================*/
+        /*===================================Report tab================================*/
 
         private void btn_BookQuantity_Click(object sender, EventArgs e)
         {
-            Option = 1;
+            /*Option = 1;
             Print_UI prnt = new Print_UI();
-            prnt.Show();
+            prnt.Show();*/
+            MessageBox.Show("Function not available!!!");
         }
 
 
         //Sale report
         private void btn_SaleReport_Click(object sender, EventArgs e)
         {
-            Option = 2;
+            /*Option = 2;
             Print_UI prnt = new Print_UI();
-            prnt.Show();
-
+            prnt.Show();*/
+            MessageBox.Show("Function not available!!!");
         }
 
         //Staff report
         private void btn_StfReport_Click(object sender, EventArgs e)
         {
-            Option = 3;
+            /*Option = 3;
             Print_UI prnt = new Print_UI();
-            prnt.Show();
+            prnt.Show(); */
+            MessageBox.Show("Function not available!!!");
         }
 
         //Customer REport
         private void btn_CusReport_Click(object sender, EventArgs e)
         {
-            Option = 4;
+            /*Option = 4;
             Print_UI prnt = new Print_UI();
-            prnt.Show();
+            prnt.Show();*/
+            MessageBox.Show("Function not available!!!");
         }
 
         /*===================================EXIT FORM================================*/
