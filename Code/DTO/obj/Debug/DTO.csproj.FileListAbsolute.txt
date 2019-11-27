@@ -1,0 +1,6 @@
+D:\Study\Y3_S2\Object Oriented and Design\Lab\Project\Book-controlling\DTO\bin\Debug\DTO.dll
+D:\Study\Y3_S2\Object Oriented and Design\Lab\Project\Book-controlling\DTO\bin\Debug\DTO.pdb
+D:\Study\Y3_S2\Object Oriented and Design\Lab\Project\Book-controlling\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\Study\Y3_S2\Object Oriented and Design\Lab\Project\Book-controlling\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\Study\Y3_S2\Object Oriented and Design\Lab\Project\Book-controlling\DTO\obj\Debug\DTO.dll
+D:\Study\Y3_S2\Object Oriented and Design\Lab\Project\Book-controlling\DTO\obj\Debug\DTO.pdb
